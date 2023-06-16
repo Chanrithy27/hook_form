@@ -37,22 +37,22 @@ const Form = (props) => {
             </form>
             <div>
                 <h1>
-                    Your Account Data
+                    Your Account Information
                 </h1>
                 <p>
-                    <em>First Name:</em>{firstName}
+                    <em>First Name:</em> {firstName}
                 </p>
                 <p>
-                    <em>Last Name:</em>{lastName}
+                    <em>Last Name:</em> {lastName}
                 </p>
                 <p>
-                    <em>Email:</em>{email}
+                    <em>Email:</em> {email}
                 </p>
                 <p>
-                    <em>First Name:</em>{firstName}
+                    <em>Password:</em> {password}
                 </p>
                 <p>
-                    <em>First Name:</em>{firstName}
+                    <em>Confirm Password:</em> {cPassword}
                 </p>
             </div>
         </div>
