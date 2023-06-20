@@ -14,6 +14,14 @@ const Form = (props) => {
                         Create Account
                     </h1>
                 </div>
+                <div style = {{color: "red"}}>
+                    {firstName.length < 2 && firstName.length > 0 ? <p style ={{color: "red"}}> * First Name must be at least 2 characters </p> : null}
+                    {lastName.length < 2 && lastName.length > 0 ? <p style ={{color: "red"}}> * Last Name must be at least 2 characters </p> : null}
+                    {email.length < 5 && email.length > 0 ? <p style ={{color: "red"}}> * Email must be at least 5 characters </p> : null}
+                    {password.length < 8 && password.length > 0 ? <p style ={{color: "red"}}> * Password must be at least 8 characters </p> : null}
+                    {cPassword !== password ? <p style ={{color: "red"}}> * Passwords must match </p> : null}
+                    
+                </div>
                 <div>
                     <label htmlFor="firstName">First Name</label>
                     <input type="text" name="firstName" onChange = { (event) => setFirstName(event.target.value) }/>
